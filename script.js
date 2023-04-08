@@ -27,9 +27,13 @@ btnCalculate.addEventListener('click', () => {
             statusBmi += "Normal"
             output.style.color = "#56F000"
             output.innerText = `${bmiCalc} (${statusBmi})`
-        } else if (bmiCalc >= 25.0) {
+        } else if (bmiCalc >= 25.0 && bmiCalc <= 29.9) {
             statusBmi += "Overweight"
-            output.style.color = "#FF3838"
+            output.style.color = "#FFACAC"
+            output.innerText = `${bmiCalc} (${statusBmi})`
+        } else if (bmiCalc >= 30.0) {
+            statusBmi += "Obesity"
+            output.style.color = "#E90064"
             output.innerText = `${bmiCalc} (${statusBmi})`
         }
     }
