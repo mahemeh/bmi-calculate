@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+		<link rel="stylesheet" href="style.css" />
+		<title>BMI-Calculate</title>
+	</head>
+	<body>
+		<div class="main">
+			<div class="tableIndex">
+				<table>
+					<thead>
+						<tr>
+							<th>IMT</th>
+							<th>Status Berat</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="underweight">
+						  <td>Under 18.5</td>
+						  <td>Underweight</td>
+						</tr>
+						<tr class="normal">
+						  <td>18.5 - 24.9</td>
+						  <td>Normal</td>
+						</tr>
+						<tr class="overweight">
+						  <td>25.0 and Above</td>
+						  <td>Overweight</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!--  -->
+			<section class="container">
+				<h1>Hitung Indeks Masa Tubuh</h1>
+				<div class="pop-up"><p>IMT : </p><h1 id="output"></h1></div>
+				<!--  -->
+				<div class="calc-box">
+					<div class="height">
+						<input type="number" id="height" class="height-input" placeholder="Masukkan Tinggi Badan (cm)" /><br>
+						<span id="height-err" class="weight-err"></span>
+					</div>
+					<div class="weight">
+						<input type="number" id="weight" class="weight-input" placeholder="Masukkan Berat Badan (kg)" /><br>
+						<span id="weight-err" class="weight-err"></span>
+					</div>
+					<div class="btn">
+						<button id="btn-calc" class="btn-calc">Mulai Hitung</button>
+						<button id="btn-reset" class="btn-reset">Reset</button>
+					</div>
+				</div>
+				<!--  -->
+				<div id="output" class="output-index"></div>
+			</section>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>

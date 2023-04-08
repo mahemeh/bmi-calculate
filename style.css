@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';font-size: 22px;
+}
+
+body {
+    background-color: #E9F8F9;
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 25px 0;
+    padding: 45px 0;
+    background-color: #fffffe;
+}
+
+.tableIndex {
+    background-color: #fffbfb;
+    border-radius: 10px;
+    padding:10px;
+    width: 35%;
+    height: fit-content;
+    box-shadow: 0 0 7px 2px #969696;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    height: auto;
+}
+
+table thead {
+    background-color: #DBE4C6;
+}
+
+table th, table td {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #979797;
+  }
+
+.underweight {
+    background-color: #CDF0EA;
+}
+
+.normal {
+    background-color: #DDFFBB;
+}
+
+.overweight {
+    background-color: #FFACAC;
+}
+
+.container {
+    margin-left: 100px;
+    padding: 15px;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.pop-up {
+    display: flex;
+    text-align: center;
+    padding: 10px 10px 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px;
+    height: 75px;
+    margin-bottom: 15px;
+}
+
+.pop-up p  {
+    margin-right: 25px;
+}
+
+.calc-box {
+    display: block;
+}
+
+.calc-box div {
+    margin-bottom: 10px;
+}
+
+.calc-box div input {
+    border: none;
+    padding: 20px 0;
+    width: 550px;
+    border-bottom: 1px solid #969696;
+}
+
+.calc-box div input:focus {
+    outline: none;
+    border-bottom: 1px solid #969696;
+}
+
+.calc-box div input::placeholder {
+    padding-bottom: 15px;
+}
+
+.calc-box div input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.btn {
+    display:  flex;
+}
+
+.btn button {
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 50%;
+}
+
+.btn .btn-calc {
+    border: none;
+    border-radius: 10px;
+    border: 2px solid #8DCBE6;
+    background-color: #8DCBE6;
+}
+
+.btn .btn-calc:hover {
+    border: 2px solid #FFD4B2;
+    background-color: #E3F6FF;
+}
+
+.btn .btn-reset {
+    border: 2px solid #FFD4B2;
+    border-radius: 10px;
+    background-color: #FFD4B2   ;
+}
+
+.btn .btn-reset:hover {
+    border: 2px solid #8DCBE6;
+    background-color: #F8F4EA;
+}
+
+.calc-box span {
+    opacity: 0;
+    font-size: 16px;
+    color: #FD8A8A;
+}
