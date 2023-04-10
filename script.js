@@ -4,7 +4,10 @@ let btnCalculate = document.getElementById("btn-calc")
 let btnReset = document.getElementById("btn-reset")
 
 btnReset.addEventListener("click", () => {
-    location.reload()
+    let output = document.getElementById("output")
+    userHeight.value = ""
+    userWeight.value = ""
+    output.innerText = ""
 })
 
 btnCalculate.addEventListener('click', () => {
